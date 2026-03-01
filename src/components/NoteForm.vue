@@ -6,7 +6,7 @@
     </form>
 </template>
 
-<script>
+<script setup>
     import { ref } from 'vue';
     import api from '../services/api';
 
