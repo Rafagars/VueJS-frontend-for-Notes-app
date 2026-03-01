@@ -1,6 +1,6 @@
 <template>
 <div class="note-container">
-    <h2>Mis Notas Activas</h2>
+    <h2>My Active Notes</h2>
     <div v-for="note in notes.filter(n => !n.archived)" :key="note.id" class="note-card">
       <h3>{{ note.title }}</h3>
       <button @click="toggleArchive(note.id)">Archive</button>
@@ -18,7 +18,7 @@
 
     <hr />
 
-    <h2>Archivadas</h2>
+    <h2>Notes Archived</h2>
     <div v-for="note in notes.filter(n => n.archived)" :key="note.id" class="note-card archived">
       <h3>{{ note.title }}</h3>
       <button @click="toggleArchive(note.id)">Unarchive</button>
