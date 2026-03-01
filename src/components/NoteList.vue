@@ -49,7 +49,7 @@ const fetchNotes = async () => {
 onMounted(fetchNotes);
 
 defineExpose({
-    fetchNotes
+  fetchNotes
 });
 
 const toggleArchive = async (id) => {
