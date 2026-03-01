@@ -1,5 +1,5 @@
 <template>
-    <form>
+    <form @submit.prevent="submitNote" class="form-container">
         <input v-model="title" placeholder="Note's title" required/>
         <textarea v-model="content" placeholder="Content..."></textarea>
         <button type="submit">Save Note</button>
