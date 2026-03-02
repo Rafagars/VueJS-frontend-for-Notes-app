@@ -3,9 +3,10 @@
     <h2>My Active Notes</h2>
     <div v-for="note in notes.filter(n => !n.archived)" :key="note.id" class="note-card">
       <h3>{{ note.title }}</h3>
+      <p>{{ note.content }}</p>
       <button @click="toggleArchive(note.id)">Archive</button>
       <button @click="removeNote(note.id)" class="btn-delete">Delete</button>
-      <button @click="openEditModal(note)">Editar</button>
+      <button @click="openEditModal(note)">Edit</button>
 
     <EditNoteModal 
       :isOpen="isModalOpen" 
