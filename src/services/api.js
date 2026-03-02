@@ -7,12 +7,14 @@ const api = axios.create({
 
 export default {
     // Gets actives notes
-    getNotes(){
-        return api.get('/notes');
+    getNotes(tag = ''){
+        return api.get('/notes', {
+            params: tag ? {tag: tag} : {}
+        });
     },
     // Creates a new note
-    createNote(title, content){
-        return api.post('/notes', {title, content});
+    createNote(title, content, tags = []){
+        return api.post('/notes', {title, content, tags});
     },
     archiveNote(noteId) {
         return api.patch(`/notes/${noteId}/archive`);

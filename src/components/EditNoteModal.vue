@@ -33,7 +33,7 @@
 
 <style scoped>
 .modal-overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); display: flex; justify-content: center; align-items: center; }
-.modal-content { background: white; padding: 20px; border-radius: 8px; width: 400px; display: flex; flex-direction: column; gap: 10px; }
+.modal-content { background: gainsboro; padding: 20px; border-radius: 8px; width: 400px; display: flex; flex-direction: column; gap: 10px; }
 .modal-actions { display: flex; gap: 10px; justify-content: flex-end; }
 .btn-save { background: #42b883; color: white; border: none; padding: 8px; cursor: pointer; }
 .btn-cancel { background: #ccc; border: none; padding: 8px; cursor: pointer; }
